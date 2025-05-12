@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOXNEWS - Latest News and Updates</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 24px;
+      }
+      .category-nav {
+        border-bottom: 1px solid #e9ecef;
+        border-top: 1px solid #e9ecef;
+      }
+      .category-nav .nav-link {
+        color: #212529;
+        font-weight: 500;
+        padding: 1rem;
+      }
+      .article-meta {
+        color: #6c757d;
+        font-size: 14px;
+      }
+      .time-indicator {
+        color: #6c757d;
+        font-size: 14px;
+        display: inline-flex;
+        align-items: center;
+      }
+      .time-indicator i {
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+      <div class="container">
+        <!-- Hamburger Menu -->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Search Bar -->
+        <div class="d-flex mx-3">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search countries"
+            aria-label="Search"
+          />
+        </div>
+
+        <!-- Logo -->
+        <a class="navbar-brand mx-auto" href="#">JOXNEWS</a>
+
+        <!-- Right side items -->
+        <div class="d-flex">
+          <a href="#" class="btn btn-outline-dark me-2 position-relative">
+            Cart
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+            >
+              1
+            </span>
+          </a>
+          <button class="btn btn-dark">Subscribe</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Category Navigation -->
+    <div class="category-nav">
+      <div class="container">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Politics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Technology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Health</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Main Article -->
+        <div class="col-lg-8 mb-4">
+          <img
+            src="./images/left.jpg"
+            alt="Global Climate Summit"
+            class="img-fluid mb-3"
+          />
+          <h1 class="mb-3">
+            Global Climate Summit Yields Mixed Results on Key Agreements
+          </h1>
+          <div class="row">
+            <p class="lead col-lg-8">
+              The global stock market has reached unprecedented levels, buoyed
+              by optimistic economic forecasts and strong corporate earnings.
+            </p>
+            <div class="d-flex align-items-center mb-3 col-lg-4">
+              <img
+                src="./images/profile.jpg"
+                alt="Author"
+                class="rounded-circle me-2"
+                style="width: 50px; height: 50px; object-fit: cover"
+              />
+              <div>
+                <div class="fw-bold">Michael Brown</div>
+                <div class="text-muted small">December 10, 2024</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Articles -->
+        <div class="col-lg-4">
+          <!-- Article 1 -->
+          <div class="row mb-4">
+            <div class="col-4">
+              <img
+                src="./images/right (1).jpg"
+                alt="Blockchain"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-8">
+              <h5 class="mb-1">
+                Blockchain Beyond Cryptocurrency: Revolutionizing Industries
+              </h5>
+              <div class="d-flex align-items-center mt-2">
+                <span class="badge bg-light text-dark me-2">Technology</span>
+                <div class="time-indicator">
+                  <i class="far fa-clock"></i> 5 Min
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="row mb-4">
+            <div class="col-4">
+              <img
+                src="./images/right (2).jpg"
+                alt="Stock Market"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-8">
+              <h5 class="mb-1">
+                Stock Market Hits Record High Amid Economic Optimism
+              </h5>
+              <div class="d-flex align-items-center mt-2">
+                <span class="badge bg-light text-dark me-2">Business</span>
+                <div class="time-indicator">
+                  <i class="far fa-clock"></i> 8 Min
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 3 -->
+          <div class="row mb-4">
+            <div class="col-4">
+              <img
+                src="./images/right (4).jpg"
+                alt="Health Innovations"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-8">
+              <h5 class="mb-1">Health Innovations to Watch in 2024</h5>
+              <div class="d-flex align-items-center mt-2">
+                <span class="badge bg-light text-dark me-2">Health</span>
+                <div class="time-indicator">
+                  <i class="far fa-clock"></i> 7 Min
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 4 -->
+          <div class="row mb-4">
+            <div class="col-4">
+              <img
+                src="./images/right (5).jpg"
+                alt="Tech Regulations"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-8">
+              <h5 class="mb-1">
+                New Regulations Put Tech Giants Under the Spotlight
+              </h5>
+              <div class="d-flex align-items-center mt-2">
+                <span class="badge bg-light text-dark me-2">Technology</span>
+                <div class="time-indicator">
+                  <i class="far fa-clock"></i> 6 Min
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---........-->
+    <div class="container mt-5 mb-4">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="m-0">Latest News</h2>
+        <a href="#" class="text-decoration-none text-dark"
+          >View All <i class="fas fa-arrow-right ms-1"></i
+        ></a>
+      </div>
+
+      <div class="row">
+        <!-- Featured Article (Left) -->
+        <div class="col-12 col-md-5 mb-4">
+          <div class="position-relative h-100 d-flex flex-column">
+            <img
+              src="./images/left.jpg"
+              alt="Global Summit"
+              class="img-fluid w-100 mb-3"
+              style="object-fit: cover; flex-grow: 1; max-height: 460px"
+            />
+            <div class="mt-2 mb-2">
+              <span class="badge bg-light text-dark me-2">Politics</span>
+              <span class="time-indicator">
+                <i class="far fa-clock"></i> 8 Min
+              </span>
+            </div>
+            <h4 class="mb-2">
+              Global Summit 2024: Leaders Address Climate, Trade, and Security
+              Challenges
+            </h4>
+          </div>
+        </div>
+
+        <!-- Right Side Articles Grid -->
+        <div class="col-12 col-md-7">
+          <div class="row">
+            <!-- Top Row Articles -->
+            <div class="col-md-6 mb-4">
+              <img
+                src="./images/right (1).jpg"
+                alt="Blockchain"
+                class="img-fluid w-100 mb-3"
+              />
+              <div class="mt-2 mb-2">
+                <span class="badge bg-light text-dark me-2">Technology</span>
+                <span class="time-indicator">
+                  <i class="far fa-clock"></i> 5 Min
+                </span>
+              </div>
+              <h5 class="mb-1">
+                Blockchain Beyond Cryptocurrency: Revolutionizing Industries
+              </h5>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <img
+                src="./images/right (2).jpg"
+                alt="Space Exploration"
+                class="img-fluid w-100 mb-3"
+              />
+              <div class="mt-2 mb-2">
+                <span class="badge bg-light text-dark me-2">Technology</span>
+                <span class="time-indicator">
+                  <i class="far fa-clock"></i> 9 Min
+                </span>
+              </div>
+              <h5 class="mb-1">
+                Exploring the Future of Space Exploration Beyond Mars
+              </h5>
+            </div>
+
+            <!-- Bottom Row Articles -->
+            <div class="col-md-6 mb-4">
+              <img
+                src="./images/right (4).jpg"
+                alt="Fitness"
+                class="img-fluid w-100 mb-3"
+              />
+              <div class="mt-2 mb-2">
+                <span class="badge bg-light text-dark me-2">Health</span>
+                <span class="time-indicator">
+                  <i class="far fa-clock"></i> 5 Min
+                </span>
+              </div>
+              <h5 class="mb-1">
+                The Role of Fitness in Chronic Disease Management
+              </h5>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <img
+                src="./images/right (5).jpg"
+                alt="Sleep Science"
+                class="img-fluid w-100 mb-3"
+              />
+              <div class="mt-2 mb-2">
+                <span class="badge bg-light text-dark me-2">Technology</span>
+                <span class="time-indicator">
+                  <i class="far fa-clock"></i> 6 Min
+                </span>
+              </div>
+              <h5 class="mb-1">
+                The Science of Sleep: How to Rest Better in a 24/7 World
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="container-fluid py-5 my-5" style="background-color: #d63b2f;">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Text Content -->
+                <div class="col-md-5 text-white">
+                    <h2 class="display-6 fw-bold mb-3">Blockchain Beyond Cryptocurrency: Revolutionizing Industries</h2>
+                    
+                    <div class="mb-4">
+                        <p>Smart city initiatives are leveraging AI, IoT, and data analytics to create sustainable spaces.</p>
+                        <hr class="my-4" style="opacity: 0.2;">
+                    </div>
+                    
+                    <div class="d-flex align-items-center">
+  <img
+    src="./images/profile.jpg"
+    alt="Author"
+    class="rounded-circle me-3"
+    style="width: 40px; height: 40px; object-fit: cover;"
+  />
+  <div>
+    <div class="fw-bold">By Ethan Collins</div>
+    <div class="small opacity-75">Published Jan 11, 2025</div>
+  </div>
+</div>
+
+                </div>
+                
+                <div class="col-md-1 d-none d-lg-block text-white">
+                    <div class="position-relative" style="opacity: 0.1;">
+                        <span class="display-1 fw-bold" style="font-size: 6rem; writing-mode: vertical-rl; transform: rotate(180deg);">LATEST</span>
+                    </div>
+                </div>
+                
+                <!-- Right Side Image -->
+                <div class="col-md-6">
+                    <img src="./images/redimage.jpg" alt="Blockchain Technology" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<div class="container my-5">
+        <h2 class="mb-4">Editors Pick</h2>
+        
+        <div class="row">
+            <!-- Main Featured Article -->
+            <div class="col-12 col-md-6 mb-4">
+                <div class="row">
+                    <!-- Left text content -->
+                    <div class="col-md-5">
+                        <h5 class="mb-3">5G Expansion: What It Means for Consumers and Businesses</h5>
+                        <p class="small text-muted">Faster, higher bandwidth in everyday lives, 5G is reshaping product services.</p>
+                    </div>
+                    <!-- Right image -->
+                    <div class="col-md-7">
+                        <img src="/api/placeholder/400/240" alt="5G Technology" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Small Articles Row -->
+            <div class="col-12 col-md-6">
+                <div class="row">
+                    <!-- Cricket Article -->
+                    <div class="col-md-4 mb-3">
+                        <div class="mb-2">
+                            <img src="/api/placeholder/180/120" alt="Cricket" class="img-fluid w-100">
+                        </div>
+                        <div class="mt-2">
+                            <span class="badge bg-light text-dark me-1 small">Sports</span>
+                            <span class="text-muted small">
+                                <i class="far fa-clock"></i> 7 Min
+                            </span>
+                        </div>
+                        <h6 class="mt-1 small fw-bold">Cricket World Cup: Highlights from Action-Packed Finals</h6>
+                    </div>
+                    
+                    <!-- Space Exploration Article -->
+                    <div class="col-md-4 mb-3">
+                        <div class="mb-2">
+                            <img src="/api/placeholder/180/120" alt="Space Exploration" class="img-fluid w-100">
+                        </div>
+                        <div class="mt-2">
+                            <span class="badge bg-light text-dark me-1 small">Technology</span>
+                            <span class="text-muted small">
+                                <i class="far fa-clock"></i> 9 Min
+                            </span>
+                        </div>
+                        <h6 class="mt-1 small fw-bold">Exploring the Future of Space Exploration Beyond Mars</h6>
+                    </div>
+                    
+                    <!-- Sleep Science Article -->
+                    <div class="col-md-4 mb-3">
+                        <div class="mb-2">
+                            <img src="/api/placeholder/180/120" alt="Sleep Science" class="img-fluid w-100">
+                        </div>
+                        <div class="mt-2">
+                            <span class="badge bg-light text-dark me-1 small">Technology</span>
+                            <span class="text-muted small">
+                                <i class="far fa-clock"></i> 6 Min
+                            </span>
+                        </div>
+                        <h6 class="mt-1 small fw-bold">The Science of Sleep: How to Rest Better in a 24/7 World</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Technology Section -->
+    <div class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="m-0">Technology</h2>
+            <a href="#" class="text-decoration-none text-danger">View All <i class="fas fa-arrow-right ms-1"></i></a>
+        </div>
+        
+        <div class="row">
+            <!-- 5G Article -->
+            <div class="col-md-4 mb-4">
+                <img src="/api/placeholder/350/250" alt="5G Technology" class="img-fluid w-100 mb-3">
+                <div class="d-flex align-items-center mb-2">
+                    <span class="badge bg-light text-dark me-2">Tech Giants</span>
+                    <span class="text-muted small">
+                        <i class="far fa-clock"></i> 7 Min
+                    </span>
+                </div>
+                <h5 class="mb-1">5G Expansion: What It Means for Consumers and Businesses</h5>
+            </div>
+            
+            <!-- Blockchain Article -->
+            <div class="col-md-4 mb-4">
+                <img src="/api/placeholder/350/250" alt="Blockchain" class="img-fluid w-100 mb-3">
+                <div class="d-flex align-items-center mb-2">
+                    <span class="badge bg-light text-dark me-2">Digital Currency</span>
+                    <span class="text-muted small">
+                        <i class="far fa-clock"></i> 5 Min
+                    </span>
+                </div>
+                <h5 class="mb-1">Blockchain Beyond Cryptocurrency: Revolutionizing Industries</h5>
+            </div>
+            
+            <!-- Space Exploration Article -->
+            <div class="col-md-4 mb-4">
+                <img src="/api/placeholder/350/250" alt="Space Exploration" class="img-fluid w-100 mb-3">
+                <div class="d-flex align-items-center mb-2">
+                    <span class="badge bg-light text-dark me-2">Space Tech</span>
+                    <span class="text-muted small">
+                        <i class="far fa-clock"></i> 9 Min
+                    </span>
+                </div>
+                <h5 class="mb-1">Exploring the Future of Space Exploration Beyond Mars</h5>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Staff Writers Section -->
+    <div class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="m-0">Staff Writers</h2>
+            <a href="#" class="text-decoration-none text-danger">View All <i class="fas fa-arrow-right ms-1"></i></a>
+        </div>
+        
+        <div class="row">
+     
+            <div class="col-6 col-md-3 mb-4 text-center">
+                <img src="/api/placeholder/150/150" alt="Ethan Collins" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                <h5 class="mb-1">Ethan Collins</h5>
+                <p class="text-muted">Senior Writer</p>
+            </div>
+            
+            
+            <div class="col-6 col-md-3 mb-4 text-center">
+                <img src="/api/placeholder/150/150" alt="Sara Ramirez" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                <h5 class="mb-1">Sara Ramirez</h5>
+                <p class="text-muted">Editor</p>
+            </div>
+            
+            
+            <div class="col-6 col-md-3 mb-4 text-center">
+                <img src="/api/placeholder/150/150" alt="Laura Bennett" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                <h5 class="mb-1">Laura Bennett</h5>
+                <p class="text-muted">Editor in Chief</p>
+            </div>
+            
+            
+            <div class="col-6 col-md-3 mb-4 text-center">
+                <img src="/api/placeholder/150/150" alt="Michael Brown" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                <h5 class="mb-1">Michael Brown</h5>
+                <p class="text-muted">Content Writer</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
